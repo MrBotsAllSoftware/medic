@@ -1,0 +1,161 @@
+/*==================== (Estilos para el blog) ====================*/
+
+.header__blog {
+    width: 100%;
+    background: url(../img/blog/blog_hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+    height: 25rem;
+    overflow: hidden;
+    
+}
+
+@media (min-width: 768px) {
+    .header__blog {
+        height: 30rem;
+    }
+}
+.fondo {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255 255 255 / 30%);
+    padding: 2rem;
+}
+.fondo .contenedor h3 {
+    color: var(--purple);
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    margin-top: 6rem;
+}
+
+.seccion__nav {
+    display: flex;
+    font-size: 1.8rem;
+}
+.seccion__nav a {
+    transition: .3s ease-in-out;
+}
+.seccion__nav a:hover {
+    color: var(--blue);
+}
+.barra {
+    margin-left: .5rem;
+    margin-right: .5rem;
+    opacity: .7;
+}
+span.active {
+    color: var(--purple);
+    opacity: .7;
+}
+
+.blog__public {
+    width: 100%;
+    margin-top: 6rem;
+}
+
+.blog__public .contenedor {
+    display: grid;
+    gap: 4rem;
+}
+@media (min-width: 768px) {
+    .blog__public .contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .blog__public .contenedor {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width: 1400px) {
+    .blog__public .contenedor {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+.publication {
+    width: 100%;
+}
+.publication__wallpaper {
+    width: 100%;
+    overflow: hidden;
+}
+.publication:hover .publication__wallpaper img {
+    transform: scale(1.1);
+}
+.publication__wallpaper img {
+    width: 100%;
+    transition: .3s ease-in-out;
+}
+.publication h4 {
+    font-size: 2.5rem;
+    color: var(--purple);
+    margin-top: 0;
+    font-weight: 600;
+}
+.publication h4:hover {
+    color: var(--orange);
+}
+.info__publication {
+    display: flex;
+    justify-content: space-around;
+}
+
+.date span,
+.autor span {
+    opacity: .7;
+    color: var(--purple);
+}
+.date span:hover,
+.autor span:hover {
+    color: var(--orange);
+}
+.icon__date {
+    opacity: .1;
+}
+.icon__autor {
+    opacity: .1;
+}
+.text p {
+    font-size: 300;
+    opacity: .7;
+    font-size: 1.7;
+    text-align: justify;
+}
+/*==================== (lista paginacion) ====================*/
+.pagination {
+    margin-top: 6rem;
+}
+.list__pagination {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.list__pagination li {
+    margin-right: 2rem;
+}
+
+.list__pagination li a {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+}
+.list__pagination li a:last-of-type {
+    margin: 0;
+}
+.list__pagination li a:hover {
+    background-color: var(--green);
+    color: var(--white);
+}
+.list__pagination li a.active {
+    background-color: var(--green);
+    color: var(--white);
+}

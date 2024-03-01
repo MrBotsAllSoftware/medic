@@ -1,0 +1,90 @@
+.medicos {
+    margin-top: 8rem;
+}
+.medicos .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.medicos .contenedor h2{
+    font-size: 3.5rem;
+    text-align: center;
+    color: var(--purple);
+    text-wrap: wrap;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.medicos .contenedor h2:nth-child(2) {
+    margin-bottom: 4rem;
+}
+.list_medics {
+    display: grid;
+    gap: 4rem;
+}
+
+@media (min-width: 768px) {
+    .list_medics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.profile__medic {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.text__medic h4 {
+    color: var(--purple);
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: .4rem;
+}
+.text__medic span {
+    font-weight: 100;
+    color: var(--purple)
+}
+.text__medic ul {
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+    margin-top: 2rem;
+}
+
+.text__medic ul li {
+    color: var(--purple);
+    opacity: .8;
+    
+}
+
+@media (min-width: 768px) {
+    .text__medic ul li {
+        margin-bottom: 1rem;
+    }
+}
+.text__medic ul li span {
+    margin-right: 1rem;
+}
+.text__medic ul li:last-of-type {
+    display: flex;
+}
+.text__medic ul li:last-of-type .redes {
+    display: flex;
+}
+.text__medic p {
+    opacity: .7;
+    font-weight: 400;
+}
+.medic__foto {
+    width: 100%;
+}
+
+.medic__foto img {
+    width: 100%;
+}
+.portafolio {
+    padding: 1rem;
+    margin-top: 2rem;
+    color: var(--green);
+    /* font-size: 1.7rem; */
+    text-transform: uppercase;
+}
